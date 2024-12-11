@@ -1,0 +1,113 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light text for dark mode */
+    background-color: #121212; /* Dark background */
+}
+
+header {
+    background: #1f1f1f; /* Darker header background */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #e0e0e0; /* Light text for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #bb86fc; /* Light purple for hover */
+}
+
+main {
+    padding: 2rem;
+    background-color: #181818; /* Dark background for main content */
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc; /* Light purple for headings */
+}
+
+footer {
+    background: #1f1f1f; /* Dark footer background */
+    color: #e0e0e0; /* Light text for footer */
+    text-align: center;
+    padding: 0.25rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Forms */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #333; /* Dark border */
+    border-radius: 5px;
+    background: #2c2c2c; /* Dark form background */
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555; /* Dark border */
+    border-radius: 5px;
+    background: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text in inputs */
+}
+
+form button {
+    background: #bb86fc; /* Light purple button */
+    color: #121212; /* Dark text for button */
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #3700b3; /* Darker purple on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
